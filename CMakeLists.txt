@@ -40,7 +40,7 @@ CPM_InitModule(${CPM_MODULE_NAME})
 set(HIPPOMOCKS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/hippomocks)
 CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${HIPPOMOCKS_DIR}
-  GIT_REPOSITORY "https://github.com/dascandy/hippomocks.git"
+  GIT_REPOSITORY "git@csm-soft.csm06.local:hippomocks.git"
   GIT_TAG 6ca870ea5e173586e24a8536314b9d200b165567
   USE_CACHING TRUE
   )
