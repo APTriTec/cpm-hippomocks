@@ -18,7 +18,7 @@ else()
   endif()
   if (NOT EXISTS ${CPM_DIR}/CPM.cmake)
     execute_process(
-      COMMAND "${GIT_EXECUTABLE}" clone https://github.com/iauns/cpm ${CPM_DIR}
+      COMMAND "${GIT_EXECUTABLE}" clone git@csm-soft.csm06.local:cpm.git ${CPM_DIR}
       RESULT_VARIABLE error_code
       OUTPUT_VARIABLE head_sha)
     if(error_code)
